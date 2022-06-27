@@ -1,0 +1,33 @@
+table {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 1rem;
+}
+
+.mat-column-cedula {
+  width: 15%;
+}
+
+.mat-column-nombres {
+  width: 20%;
+}
+
+.mat-column-apellidos {
+  width: 20%;
+}
+
+.mat-column-direccion {
+  width: 20%;
+}
+
+.mat-column-edad {
+  width: 10%;
+}
+
+.mat-column-actions {
+  width: 15%;
+}

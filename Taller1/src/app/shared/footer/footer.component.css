@@ -1,0 +1,14 @@
+.footer-content {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-title,
+.footer-copy {
+  text-align: center;
+}
+
+.footer-title {
+  margin-block: 0 0.5rem;
+}

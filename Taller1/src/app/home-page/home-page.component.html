@@ -1,0 +1,15 @@
+<h1>Bienvenido</h1>
+
+<div *ngIf="isLoggedIn; else public">
+  <h2>Usuario Autenticado</h2>
+  <pre>{{ user | json }}</pre>
+</div>
+
+<ng-template #public>
+  <div>
+    <h2>Grupo 2</h2>
+    <p>
+      modulo cliente
+    </p>
+  </div>
+</ng-template>

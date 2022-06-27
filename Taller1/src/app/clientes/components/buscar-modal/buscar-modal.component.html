@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>Cliente encontrado</h1>
+<div mat-dialog-content>
+  El cliente Buscardo es:
+  Cedula: {{data.cedula}}
+  Nombre: {{ data.nombres }}
+  Apellidos: {{ data.apellidos }}
+  Direccion: {{ data.direccion }}
+  Edad: {{ data.edad }}
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close cdkFocusInitial (click)="onConfirm()">
+    Ok
+  </button>
+</div>
+</div>

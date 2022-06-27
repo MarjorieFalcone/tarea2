@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>Iniciar Sesión</h1>
+
+<form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+  <div mat-dialog-content>
+    <div *ngIf="showLoginError; then errorBlock; else instructionsBlock"></div>
+    <ng-template #errorBlock>
+      <p class="error">{{ loginError }}</p>
+    </ng-template>
+    <ng-template #instructionsBlock>
+      <p>Por favor, ingresa tus credenciales</p>
+    </ng-template>
+
+    <div class="inputs-wrapper">
+      <mat-form-field appearance="fill">
+        <mat-label>Usuario</mat-label>
+        <input
+          matInput
+          placeholder="Usuario"
+          formControlName="email"
+        />
+        <mat-error *ngIf="isInvalid('email')">
+          {{ getErrorMessage("email") }}
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password" />
+        <mat-error *ngIf="isInvalid('password')">
+          {{ getErrorMessage("password") }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close cdkFocusInitial>Cancelar</button>
+    <button mat-raised-button color="primary" type="submit">Ingresar</button>
+  </div>
+</form>

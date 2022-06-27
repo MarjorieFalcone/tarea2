@@ -1,0 +1,36 @@
+.logo {
+  width: 32px;
+  margin-inline-end: 1rem;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-inline-end: 1rem;
+}
+
+.user-name {
+  font-size: 1rem;
+}
+
+.navbar {
+  display: flex;
+  margin-inline-start: 2rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
